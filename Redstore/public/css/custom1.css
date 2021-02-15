@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#col-4{
+    flex-basis: 16%;
+    padding: 5px;
+    min-width: 100px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+#col-4 img{
+    width: 100%;
+    height: 200px;
+}
+#title{
+    text-align: center;
+    margin: 0 auto 10px;
+    position: relative;
+    line-height: 50px;
+    color: #555;
+}
+#title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#col-4 h4{
+    color: #555;
+    font-size: 15px;
+    font-weight: normal;
+}
+#col-4 p{
+    font-size: 14px;
+}
+#rating{
+    margin-top: -5px;
+    color: #ff523b;
+    font-size: 10px;
+}
+#col-4:hover{
+    transform: translateY(-5px);
+}
+
+
+
+
+/******************** user profile *****************************/
+.container #card h5{
+    font-size: 20px;
+    padding: 5px;
+}
+#profile{
+    display: flex;
+    flex-wrap: wrap;
+}
+#p-col-3{
+    flex-basis: 28%;
+    padding: 10px;
+    text-align: center;
+}
+.my-static{
+    position: -webkit-sticky;
+  position: sticky;
+}
+#p-name{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+#p-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+#p-col-6{
+    flex-basis: 50%;
+    margin: 0px;
+}
+#p-image{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+#p-col-7{
+    flex-basis: 70%;
+}
+#no-profile{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+#p-col-7{
+    margin-top: 10px;
+}
+#s-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#s-col-3{
+    flex-basis: 28%;
+    text-align: center;
+}
+#s-image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#s-col-7{
+    flex-basis: 70%;
+}
+
+
+
+
+
+/******************** Product page *****************************/
+#p-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+#p-col-6{
+    flex-basis: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#p-4{
+    flex-basis: 40%;
+}
+#p-4 img{
+    width: 250px;
+    padding: 0;
+}
+#p-6{
+    flex-basis: 60%;
+}
+#p-6 a{
+    display: block;
+    background: #ff523b;
+    color: #fff;
+}
+#p-col-4{
+    flex-basis: 30%;
+    padding-left: 10px;
+}
+
+
+/******************** Cart page *****************************/
+#c-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+#c-col-4{
+    flex-basis: 30%;
+}
+#c-col-4 img{
+    width: 100px;
+}
+#c-col-6{
+    flex-basis: 70%;
+}
+#c-col-6 a{
+    background: #ff523b;
+    color: white;
+}
+#form a{
+    background: #ff523b;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+}
+#form input{
+    width: 40px;
+}
+#price{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+
+
+/******************** Shop profile *****************************/
+
+@media only screen and (max-width: 800px){
+
+    /*   Top header styling  */
+    #home-row{
+        flex-wrap: wrap;
+        margin-top: -20px;
+    }
+    #col-3{
+        flex-basis: 100%;
+        display: none;
+    }
+    #small-card{
+        padding: 10px;
+    }
+    #col-9{
+        flex-basis: 100%;
+        margin-top: 5px;
+    }
+    #card{
+        padding: 0;
+    }
+    #c-img{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        height: 200px;
+    }
+
+
+    /*   products styling   */
+    #title{
+       font-size: 15px; 
+       line-height: 25px;
+    }
+    #title::after{
+        width: 40px;
+        height: 3px;
+        border-radius: 3px;
+    }
+    #col-4 h4{
+        font-size: 13px;
+    }
+    #rating{
+        font-size: 8px;
+    }
+    #col-4 p{
+        font-size: 12px;
+    }
+    #col-4{
+        text-align: center;
+        flex-basis: 50%;
+        padding: 5px;
+        min-width: 150px;
+        margin-bottom: 10px;
+        transition: transform 0.5s;
+    }
+
+    /******************** user profile *****************************/
+    .container #card h5{
+        padding: 10px;
+        margin-top: -18px;
+    }
+    #p-col-3{
+        flex-basis: 100%;
+        padding: 0px;
+        margin-top: -5px;
+    }
+    #o-col-3 #card{
+        margin: 0;
+    }
+    #p-image{
+        margin-top: 20px;
+    }
+    #p-col-7{
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+    #p-col-7 #card{
+        padding: 10px;
+    }
+
+
+
+    /******************** product page *****************************/
+    #p-row{
+        padding-top: 10px;
+    }
+    #p-col-6{
+        flex-basis: 100%;
+        padding: 3px;
+    }
+    #p-4{
+        flex-basis: 100%;
+    }
+    #p-4 img{
+        width: 100%;
+        margin: 5px;
+        padding-bottom: 5px;
+    }
+    #p-6{
+        flex-basis: 100%;
+    }
+    #p-6 h3{
+        font-size: 15px;
+    }
+    #p-6 p{
+        font-size: 13px;
+    }
+    #p-6 h4{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #p-6 a{
+        display: block;
+        background: #ff523b;
+        color: #fff;
+    }
+    #p-col-4{
+        flex-basis: 100%;
+        padding-left: 0px;
+    }
+}
